@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		541527282919621F00346462 /* TextViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541527272919621F00346462 /* TextViewTableViewCell.swift */; };
+		5415272C291964EE00346462 /* NameTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5415272B291964EE00346462 /* NameTextView.swift */; };
+		5415272E29198B5700346462 /* DataPickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5415272D29198B5700346462 /* DataPickerTableViewCell.swift */; };
 		543874062917174500CE4CAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543874052917174500CE4CAE /* AppDelegate.swift */; };
 		5438740A2917174500CE4CAE /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543874092917174500CE4CAE /* MainTableViewController.swift */; };
 		5438740F2917174600CE4CAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5438740E2917174600CE4CAE /* Assets.xcassets */; };
@@ -18,6 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		541527272919621F00346462 /* TextViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewTableViewCell.swift; sourceTree = "<group>"; };
+		5415272B291964EE00346462 /* NameTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameTextView.swift; sourceTree = "<group>"; };
+		5415272D29198B5700346462 /* DataPickerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPickerTableViewCell.swift; sourceTree = "<group>"; };
 		543874022917174500CE4CAE /* Person_Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Person_Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		543874052917174500CE4CAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		543874092917174500CE4CAE /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
@@ -41,6 +47,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		541527262919620600346462 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				541527272919621F00346462 /* TextViewTableViewCell.swift */,
+				5415272D29198B5700346462 /* DataPickerTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		54152729291964BF00346462 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				541527262919620600346462 /* Cells */,
+				5415272B291964EE00346462 /* NameTextView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		543873F92917174500CE4CAE = {
 			isa = PBXGroup;
 			children = (
@@ -60,8 +84,8 @@
 		543874042917174500CE4CAE /* Person_Test */ = {
 			isa = PBXGroup;
 			children = (
-				54387427291721DB00CE4CAE /* EditingModel */,
 				5438741A2917187F00CE4CAE /* App */,
+				54387427291721DB00CE4CAE /* EditingModel */,
 				5438741B291718DA00CE4CAE /* MainModule */,
 				5438741D29171A7F00CE4CAE /* Resources */,
 				5438742329171D0E00CE4CAE /* Extensions */,
@@ -140,6 +164,7 @@
 		54387427291721DB00CE4CAE /* EditingModel */ = {
 			isa = PBXGroup;
 			children = (
+				54152729291964BF00346462 /* Views */,
 				54387428291721E800CE4CAE /* Controllers */,
 			);
 			path = EditingModel;
@@ -228,6 +253,9 @@
 				5438741F29171A8B00CE4CAE /* File.swift in Sources */,
 				5438742629171D3E00CE4CAE /* UIView+ Extensions.swift in Sources */,
 				5438742229171B7800CE4CAE /* MainTableViewCell.swift in Sources */,
+				541527282919621F00346462 /* TextViewTableViewCell.swift in Sources */,
+				5415272C291964EE00346462 /* NameTextView.swift in Sources */,
+				5415272E29198B5700346462 /* DataPickerTableViewCell.swift in Sources */,
 				543874062917174500CE4CAE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

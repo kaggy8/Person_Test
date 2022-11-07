@@ -17,6 +17,7 @@ class MainTableViewCell: UITableViewCell {
         label.textAlignment = .right
         label.numberOfLines = 0
         label.text = "Test"
+        
         return label
     }()
     
@@ -33,6 +34,9 @@ class MainTableViewCell: UITableViewCell {
     
     
     private func setupViews() {
+        selectionStyle = .none
+        nameLabel.font = Resources.Fonts.avenirNextRegular(with: 18)
+    
         addView(nameLabel)
         addView(valueLabel)
     }  
@@ -45,6 +49,8 @@ class MainTableViewCell: UITableViewCell {
 extension MainTableViewCell {
     private func setConstraints() {
         NSLayoutConstraint.activate([
+            heightAnchor.constraint(greaterThanOrEqualToConstant: 44),
+            
             nameLabel.centerYAnchor.constraint(equalTo: centerYAnchor),
             nameLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 10),
             nameLabel.widthAnchor.constraint(equalTo: widthAnchor, multiplier: 0.35),
