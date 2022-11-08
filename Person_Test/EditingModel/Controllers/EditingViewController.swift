@@ -10,12 +10,22 @@ import UIKit
 class EditingViewController: UIViewController {
     
     private let editingTableView = EditingTableView()
+    private var userModel = UserModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setupViews()
         setConstraints()
+    }
+    
+    init(_ userModel: UserModel) {
+        super.init(nibName: nil, bundle: nil)
+        self.userModel = userModel
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
     
     private func setupViews() {
@@ -31,7 +41,23 @@ class EditingViewController: UIViewController {
     }
     
     @objc private func saveTapped() {
+        if authFields() {
+            presentSimpleAlert(title: "Данные сохранены", message: "Все обязательные поля заполнены")
+        } else {
+            presentSimpleAlert(title: "Ошибка", message: "Заполните поля ФИО, дата рождения и выберите пол")
+        }
+    }
+    
+    private func authFields() -> Bool {
+        if userModel.firstName != "" ||
+            userModel.secondName != "" ||
+            userModel.birthday != ""  ||
+            userModel.gender == "" ||
+            userModel.gender == "Не указано" {
+            return true
+        }
         
+        return false
     }
 }
 
