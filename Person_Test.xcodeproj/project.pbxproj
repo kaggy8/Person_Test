@@ -20,7 +20,8 @@
 		5438741F29171A8B00CE4CAE /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5438741E29171A8B00CE4CAE /* File.swift */; };
 		5438742229171B7800CE4CAE /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5438742129171B7800CE4CAE /* MainTableViewCell.swift */; };
 		5438742629171D3E00CE4CAE /* UIView+ Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5438742529171D3E00CE4CAE /* UIView+ Extensions.swift */; };
-		5438742A291721FE00CE4CAE /* EditingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54387429291721FE00CE4CAE /* EditingTableViewController.swift */; };
+		5438742A291721FE00CE4CAE /* EditingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54387429291721FE00CE4CAE /* EditingViewController.swift */; };
+		54F1FEBA291AE64B0036D2BF /* EditingTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F1FEB9291AE64B0036D2BF /* EditingTableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,7 +40,8 @@
 		5438741E29171A8B00CE4CAE /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		5438742129171B7800CE4CAE /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
 		5438742529171D3E00CE4CAE /* UIView+ Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+ Extensions.swift"; sourceTree = "<group>"; };
-		54387429291721FE00CE4CAE /* EditingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditingTableViewController.swift; sourceTree = "<group>"; };
+		54387429291721FE00CE4CAE /* EditingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditingViewController.swift; sourceTree = "<group>"; };
+		54F1FEB9291AE64B0036D2BF /* EditingTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditingTableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,9 +69,10 @@
 			isa = PBXGroup;
 			children = (
 				541527262919620600346462 /* Cells */,
-				5415272B291964EE00346462 /* NameTextView.swift */,
 				541527322919931600346462 /* GenderPickerView.swift */,
 				54152734291994DA00346462 /* GenderTextField.swift */,
+				5415272B291964EE00346462 /* NameTextView.swift */,
+				54F1FEB9291AE64B0036D2BF /* EditingTableView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -94,8 +97,8 @@
 			isa = PBXGroup;
 			children = (
 				5438741A2917187F00CE4CAE /* App */,
-				54387427291721DB00CE4CAE /* EditingModel */,
 				5438741B291718DA00CE4CAE /* MainModule */,
+				54387427291721DB00CE4CAE /* EditingModel */,
 				5438741D29171A7F00CE4CAE /* Resources */,
 				5438742329171D0E00CE4CAE /* Extensions */,
 				543874192917187900CE4CAE /* SupportingFiles */,
@@ -182,7 +185,7 @@
 		54387428291721E800CE4CAE /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				54387429291721FE00CE4CAE /* EditingTableViewController.swift */,
+				54387429291721FE00CE4CAE /* EditingViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -258,7 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5438740A2917174500CE4CAE /* MainTableViewController.swift in Sources */,
-				5438742A291721FE00CE4CAE /* EditingTableViewController.swift in Sources */,
+				5438742A291721FE00CE4CAE /* EditingViewController.swift in Sources */,
 				5438741F29171A8B00CE4CAE /* File.swift in Sources */,
 				5438742629171D3E00CE4CAE /* UIView+ Extensions.swift in Sources */,
 				541527332919931600346462 /* GenderPickerView.swift in Sources */,
@@ -267,6 +270,7 @@
 				541527312919920E00346462 /* PickerViewTableViewCell.swift in Sources */,
 				5415272C291964EE00346462 /* NameTextView.swift in Sources */,
 				5415272E29198B5700346462 /* DatePickerTableViewCell.swift in Sources */,
+				54F1FEBA291AE64B0036D2BF /* EditingTableView.swift in Sources */,
 				54152735291994DA00346462 /* GenderTextField.swift in Sources */,
 				543874062917174500CE4CAE /* AppDelegate.swift in Sources */,
 			);
