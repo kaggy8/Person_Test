@@ -25,6 +25,7 @@
 		54F1FEBD291AEEDD0036D2BF /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F1FEBC291AEEDD0036D2BF /* UserModel.swift */; };
 		54F1FEC0291AEFD90036D2BF /* UserDefaultHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F1FEBF291AEFD90036D2BF /* UserDefaultHelper.swift */; };
 		54F1FEC2291AF4060036D2BF /* UIViewController + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F1FEC1291AF4060036D2BF /* UIViewController + Extensions.swift */; };
+		54F1FEC4291AF65C0036D2BF /* UIBarButtonItem + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F1FEC3291AF65C0036D2BF /* UIBarButtonItem + Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		54F1FEBC291AEEDD0036D2BF /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		54F1FEBF291AEFD90036D2BF /* UserDefaultHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultHelper.swift; sourceTree = "<group>"; };
 		54F1FEC1291AF4060036D2BF /* UIViewController + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Extensions.swift"; sourceTree = "<group>"; };
+		54F1FEC3291AF65C0036D2BF /* UIBarButtonItem + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem + Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +180,7 @@
 			children = (
 				5438742529171D3E00CE4CAE /* UIView+ Extensions.swift */,
 				54F1FEC1291AF4060036D2BF /* UIViewController + Extensions.swift */,
+				54F1FEC3291AF65C0036D2BF /* UIBarButtonItem + Extension.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -296,6 +299,7 @@
 				541527282919621F00346462 /* TextViewTableViewCell.swift in Sources */,
 				541527312919920E00346462 /* PickerViewTableViewCell.swift in Sources */,
 				54F1FEBD291AEEDD0036D2BF /* UserModel.swift in Sources */,
+				54F1FEC4291AF65C0036D2BF /* UIBarButtonItem + Extension.swift in Sources */,
 				5415272C291964EE00346462 /* NameTextView.swift in Sources */,
 				5415272E29198B5700346462 /* DatePickerTableViewCell.swift in Sources */,
 				54F1FEBA291AE64B0036D2BF /* EditingTableView.swift in Sources */,

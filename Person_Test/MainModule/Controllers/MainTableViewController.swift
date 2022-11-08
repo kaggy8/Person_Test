@@ -31,7 +31,6 @@ final class MainTableViewController: UITableViewController {
     
     @objc private func editingTapped() {
         let editingTableViewController = EditingViewController(userModel)
-        navigationItem.backButtonTitle = "Назад"
         navigationController?.pushViewController(editingTableViewController, animated: true)
     }
     
