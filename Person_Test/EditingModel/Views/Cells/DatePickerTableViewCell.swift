@@ -42,8 +42,17 @@ class DatePickerTableViewCell: UITableViewCell {
         contentView.addView(datePicker)
     }
     
-    public func configure(name: String) {
+    public func configure(name: String, date: Date) {
         nameLabel.text = name
+        datePicker.date = date
+    }
+    
+    public func getCellValue() -> String {
+        if datePicker.date.getStringFromDate() == Date().getStringFromDate() {
+            return ""
+        } else {
+            return datePicker.date.getStringFromDate()
+        }
     }
 }
 

@@ -43,10 +43,16 @@ final class TextViewTableViewCell: UITableViewCell {
         nameTextView.delegate = self
     }
     
-    public func configure(name: String, scrollEnabled: Bool) {
+    public func configure(name: String, scrollEnabled: Bool, value: String) {
         nameLabel.text = name
+        nameTextView.text = value == "" ? "Введите данные" : value
         nameTextView.isScrollEnabled = scrollEnabled
         nameTextView.showsVerticalScrollIndicator = false
+        nameTextView.textColor = value == "" ? .lightGray : .black
+    }
+    
+    public func getCellValue() -> String {
+        nameTextView.text == "Введите данные" ? "" : nameTextView.text
     }
 }
 
